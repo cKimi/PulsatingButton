@@ -19,9 +19,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onClickBtn(_ sender: UIButton) {
-        let pulse = PulseAnimation(numberOfPulses: Float.infinity, radius: 50, position: sender.center)
+        let pulse = PulseAnimation(numberOfPulses: 4, radius: 50, position: sender.center)
         pulse.animationDuration = 1.0
-        pulse.backgroundColor = UIColor.red.cgColor
+        pulse.backgroundColor = UIColor.systemBlue.cgColor
         self.view.layer.insertSublayer(pulse, below: self.view.layer)
     }
 }
